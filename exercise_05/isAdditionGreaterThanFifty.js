@@ -12,9 +12,7 @@
  * @returns {boolean} - `true` if the sum is greater than or equal to 50, `false` otherwise.
  */
 function isAdditionGreaterThanFifty(summand1, summand2) {
-  if (typeof summand1 !== "number" || typeof summand2 !== "number") {
-    throw new Error("Both input parameters must be numbers");
-  }
+  
 
   const sum = summand1 + summand2;
 

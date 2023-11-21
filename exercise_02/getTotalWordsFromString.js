@@ -10,9 +10,7 @@
  * @returns {number} - The total number of words in the string.
  */
 function getTotalWordsFromString(sentence) {
-  if (typeof sentence !== "string") {
-    throw new Error("Input must be a string");
-  }
+  
 
   // Split the string into words using space as a delimiter
   const words = sentence.split(" ");

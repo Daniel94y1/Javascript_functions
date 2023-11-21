@@ -9,9 +9,7 @@
  * @returns {boolean} - `true` if the collection has elements, `false` if it's empty.
  */
 function checkCollectionHasElements(collection) {
-  if (!Array.isArray(collection)) {
-    throw new Error("Input must be an array");
-  }
+  
 
   return collection.length > 0;
 }

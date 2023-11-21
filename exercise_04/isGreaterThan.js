@@ -11,9 +11,7 @@
  * @returns {boolean} - `true` if the number is greater than the threshold, `false` otherwise.
  */
 function isGreaterThan(value, threshold) {
-  if (typeof value !== "number" || typeof threshold !== "number") {
-    throw new Error("Both input parameters must be numbers");
-  }
+  
 
   return value > threshold;
 }
