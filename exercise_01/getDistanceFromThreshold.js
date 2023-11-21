@@ -12,13 +12,11 @@ Calculates how much a number exceeds or falls behind in reaching a threshold val
  * @returns {number} - The distance from the threshold. A positive number if it exceeds, negative if it is below.
  */
 function getDistanceFromThreshold(value, threshold) {
-    if (typeof value !== 'number' || typeof threshold !== 'number') {
-      throw new Error('Both input parameters must be numbers');
-    }
-  
-    return value - threshold;
+  if (typeof value !== "number" || typeof threshold !== "number") {
+    throw new Error("Both input parameters must be numbers");
   }
 
-  
-  export default getDistanceFromThreshold;
- 
+  return value - threshold;
+}
+
+export default getDistanceFromThreshold;

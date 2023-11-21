@@ -10,16 +10,16 @@
  * @returns {number} - The total number of words in the string.
  */
 function getTotalWordsFromString(sentence) {
-    if (typeof sentence !== 'string') {
-      throw new Error('Input must be a string');
-    }
-  
-    // Split the string into words using space as a delimiter
-    const words = sentence.split(' ');
-  
-    // Filter to remove possible empty elements and count the length of the resulting array
-    const wordCount = words.filter(word => word !== '').length;
-  
-    return wordCount;
+  if (typeof sentence !== "string") {
+    throw new Error("Input must be a string");
   }
-  export default getTotalWordsFromString;
+
+  // Split the string into words using space as a delimiter
+  const words = sentence.split(" ");
+
+  // Filter to remove possible empty elements and count the length of the resulting array
+  const wordCount = words.filter((word) => word !== "").length;
+
+  return wordCount;
+}
+export default getTotalWordsFromString;
