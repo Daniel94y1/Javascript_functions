@@ -3,3 +3,17 @@
  * input: array (collection)
  * output: boolean
  */
+/**
+ * Gets the length of a collection and checks if it is empty.
+ * @param {array} collection - The collection to check.
+ * @returns {boolean} - `true` if the collection has elements, `false` if it's empty.
+ */
+function checkCollectionHasElements(collection) {
+    if (!Array.isArray(collection)) {
+      throw new Error('Input must be an array');
+    }
+  
+    return collection.length > 0;
+  }
+
+export default checkCollectionHasElements;

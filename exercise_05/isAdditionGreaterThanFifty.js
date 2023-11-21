@@ -4,3 +4,21 @@
  * input: number (summand2)
  * output: boolean
  */
+
+/**
+ * Checks if the sum of two numbers is greater than or equal to 50.
+ * @param {number} summand1 - The first number to add.
+ * @param {number} summand2 - The second number to add.
+ * @returns {boolean} - `true` if the sum is greater than or equal to 50, `false` otherwise.
+ */
+function isAdditionGreaterThanFifty(summand1, summand2) {
+    if (typeof summand1 !== 'number' || typeof summand2 !== 'number') {
+      throw new Error('Both input parameters must be numbers');
+    }
+  
+    const sum = summand1 + summand2;
+  
+    return sum >= 50;
+  }
+
+export default isAdditionGreaterThanFifty;

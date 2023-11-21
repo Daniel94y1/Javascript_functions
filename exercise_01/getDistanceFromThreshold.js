@@ -4,3 +4,21 @@
  * input: number (threshold)
  * output: number
  */
+/**
+ * 
+Calculates how much a number exceeds or falls behind in reaching a threshold value.
+ * @param {number} value - The number to evaluate.
+ * @param {number} threshold - The threshold value.
+ * @returns {number} - The distance from the threshold. A positive number if it exceeds, negative if it is below.
+ */
+function getDistanceFromThreshold(value, threshold) {
+    if (typeof value !== 'number' || typeof threshold !== 'number') {
+      throw new Error('Both input parameters must be numbers');
+    }
+  
+    return value - threshold;
+  }
+
+  
+  export default getDistanceFromThreshold;
+ 
