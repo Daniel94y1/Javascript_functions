@@ -11,8 +11,6 @@
  * @returns {boolean} - `true` if the number is greater than the threshold, `false` otherwise.
  */
 function isGreaterThan(value, threshold) {
-  
-
   return value > threshold;
 }
 
