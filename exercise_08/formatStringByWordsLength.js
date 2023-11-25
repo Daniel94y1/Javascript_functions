@@ -19,8 +19,8 @@ import getTotalWordsFromString from "../exercise_02/getTotalWordsFromString.js";
  */
 
 /**
-
  * @param {string} sentence - The string to check and format.
+ * @param {number} wordLimit - The word limit for formatting.
  * @returns {string} - The formatted string.
  */
 
