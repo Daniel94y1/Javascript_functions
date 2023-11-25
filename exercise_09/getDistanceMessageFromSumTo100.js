@@ -31,21 +31,15 @@ function getDistanceMessageFromSumTo100(value) {
   const randomValue = generateRandomNumberInRange(100);
   const sumResult = value + randomValue;
 
-  if (isGreatherThan(sumResult, 100)) {
-    return (
-      "Sum with value " +
-      sumResult +
-      " exceeds in " +
-      (sumResult - 100) +
-      " from number 100."
-    );
+  const exceedsLimit = isGreatherThan(sumResult, 100);
+
+  if (exceedsLimit) {
+    return `Sum with value ${sumResult} exceeds in ${
+      sumResult - 100
+    } from number 100.`;
   }
-  return (
-    "Sum with value " +
-    sumResult +
-    " is left in " +
-    (100 - sumResult) +
-    " from number 100."
-  );
+  return `Sum with value ${sumResult} is left in ${
+    100 - sumResult
+  } from number 100.`;
 }
 export default getDistanceMessageFromSumTo100;

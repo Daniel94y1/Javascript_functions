@@ -25,7 +25,8 @@ import checkCollectionHasElements from "../exercise_06/checkCollectionHasElement
  */
 
 function transformCollectionToString(collection) {
-  if (checkCollectionHasElements(collection)) {
+  const hasElements = checkCollectionHasElements(collection);
+  if (hasElements) {
     return collection.join(" | ");
   }
   return '""';
