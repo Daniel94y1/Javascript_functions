@@ -26,9 +26,9 @@ import getTotalWordsFromString from "../exercise_02/getTotalWordsFromString.js";
 
 function formatStringByWordsLength(sentence) {
   const wordCount = getTotalWordsFromString(sentence);
-  const shouldUpperCase = wordCount > 5;
+  const exceedsLimit = wordCount > 5;
 
-  return shouldUpperCase ? sentence.toUpperCase() : sentence.toLowerCase();
+  return exceedsLimit ? sentence.toUpperCase() : sentence.toLowerCase();
 }
 
 export default formatStringByWordsLength;
