@@ -26,9 +26,8 @@ import checkCollectionHasElements from "../exercise_06/checkCollectionHasElement
 
 function transformCollectionToString(collection) {
   if (checkCollectionHasElements(collection)) {
-    return collection.join(' | ');
+    return collection.join(" | ");
   }
   return '""';
 }
 export default transformCollectionToString;
-

@@ -9,8 +9,6 @@
  * @returns {number} - The generated random number.
  */
 function generateRandomNumberInRange(limit) {
-  
-
   // Generate a random number and round it
   const randomNumber = Math.round(Math.random() * limit);
 

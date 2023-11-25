@@ -9,8 +9,6 @@
  * @returns {boolean} - `true` if the collection has elements, `false` if it's empty.
  */
 function checkCollectionHasElements(collection) {
-  
-
   return collection.length > 0;
 }
 
